@@ -4,7 +4,7 @@ const username = document.getElementById('username').value;
 const password = document.getElementById('password').value;
 
 // Send login credentials to your backend API
-const response = await fetch('https://your-backend.com/login', {
+const response = await fetch('https://nexus-vpn.vercel.app', {
 method: 'POST',
 headers: {
 'Content-Type': 'application/json',
@@ -24,7 +24,7 @@ document.getElementById('connect-vpn').addEventListener('click', async function(
 // Assuming the user has logged in successfully, request VPN connection details
 
 
-const response = await fetch('https://your-backend.com/connect-vpn', {
+const response = await fetch('https://nexus-vpn.vercel.app', {
 method: 'GET',
 });
 
